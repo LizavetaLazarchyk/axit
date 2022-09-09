@@ -17,7 +17,7 @@ $additionalFont: "OpenSans", sans-serif;
     transition: all 0.5s linear;
 }
 @mixin animationActive {
-    transition: all 0.2s linear;
+    transition: all 0.3s linear;
 }
 @mixin h1Style {
     font-family: $maneFont;
@@ -87,6 +87,7 @@ $additionalFont: "OpenSans", sans-serif;
     }
     &__menu_close {
         display: none;
+        margin: 36px;
     }
     &__logo {
         display: block;
@@ -728,31 +729,41 @@ $additionalFont: "OpenSans", sans-serif;
             margin-bottom: 50px;
         }
     }
+
     &__content{
         display: flex;
         margin: 0 auto;
         align-items: center;
+        position: relative;
+    }
+    &__inner {
+        display: flex;
+        transition: 0.5s all;
+    }
+    &__inner__wrap{
+        max-width: 746px;
+        border-radius: 20px;
+        max-height: 400px;
+        @media (max-width: 1074px ) {
+            max-width: 650px;
+            width: 100%;
+        }
     }
     &__img__wrap {
-        max-width: 870px;
+        max-width: 745px;
+        width: 100%;
         position: relative;
         overflow: hidden; 
-        margin: 0 35px;
-        border-radius: 20px;
         &::after{
             content: '';
             display: block;
             padding-top: auto;
         }
-        @media (max-width: 1024px ) {
+        @media (max-width: 1074px ) {
             max-width: 650px;
-            width: 100%;
-            margin: 0 40px;
         }
         @media (max-width: 600px ) {
             max-width: 650px;
-            width: 100%;
-            margin: 0;
         }
     }
     &__img {
@@ -762,6 +773,9 @@ $additionalFont: "OpenSans", sans-serif;
     }
     &__arrow{
         height: fit-content;
+        margin: 0 35px;
+        cursor: pointer;
+        display: block;
         @media (max-width: 750px ) {
             width: 20px;
             height: 45px;

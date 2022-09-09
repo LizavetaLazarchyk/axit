@@ -68,6 +68,7 @@
 
 .header__menu_close {
   display: none;
+  margin: 36px;
 }
 
 .header__logo {
@@ -143,8 +144,8 @@
 
 .navigation__link:active {
   background-color: #AB4949;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .navigation__items {
@@ -324,8 +325,8 @@
   background-color: #AB4949;
   border: 2px solid #AB4949;
   color: #fff;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .mane__form {
@@ -433,8 +434,8 @@
   background: #EC7979;
   -webkit-box-shadow: inset 0px 0px 10px #AB4949;
           box-shadow: inset 0px 0px 10px #AB4949;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .social {
@@ -563,8 +564,8 @@
 .social__link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 1024px) {
@@ -633,8 +634,8 @@
 
 .tabs__item:checked {
   border: 1px solid #c6cbcd;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .tabs__item_active {
@@ -733,8 +734,8 @@
   background: #EC7979;
   -webkit-box-shadow: inset 0px 0px 10px #AB4949;
           box-shadow: inset 0px 0px 10px #AB4949;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 1024px) {
@@ -1089,14 +1090,34 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.slider__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.slider__inner__wrap {
+  max-width: 746px;
+  border-radius: 20px;
+  max-height: 400px;
+}
+
+@media (max-width: 1074px) {
+  .slider__inner__wrap {
+    max-width: 650px;
+    width: 100%;
+  }
 }
 
 .slider__img__wrap {
-  max-width: 870px;
+  max-width: 745px;
   position: relative;
   overflow: hidden;
-  margin: 0 35px;
-  border-radius: 20px;
 }
 
 .slider__img__wrap::after {
@@ -1105,11 +1126,10 @@
   padding-top: auto;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1074px) {
   .slider__img__wrap {
     max-width: 650px;
     width: 100%;
-    margin: 0 40px;
   }
 }
 
@@ -1117,7 +1137,6 @@
   .slider__img__wrap {
     max-width: 650px;
     width: 100%;
-    margin: 0;
   }
 }
 
@@ -1132,6 +1151,9 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  margin: 0 35px;
+  cursor: pointer;
+  display: block;
 }
 
 @media (max-width: 750px) {
@@ -1342,8 +1364,8 @@
   -webkit-filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
           filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
   margin-top: -30px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 900px) {
@@ -1455,8 +1477,8 @@
   background: #EC7979;
   -webkit-box-shadow: inset 0px 0px 10px #AB4949;
           box-shadow: inset 0px 0px 10px #AB4949;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 900px) {
@@ -1552,8 +1574,8 @@
   background: #EC7979;
   -webkit-box-shadow: inset 0px 0px 10px #AB4949;
           box-shadow: inset 0px 0px 10px #AB4949;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 600px) {
@@ -2034,8 +2056,8 @@
   background-color: #AB4949;
   border: 2px solid #AB4949;
   color: #fff;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .contact {
@@ -2192,8 +2214,8 @@
 .contact__form__item:focus {
   outline: none;
   border: 1px solid #000;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .contact__form__textarea {
@@ -2212,8 +2234,8 @@
 .contact__form__textarea:focus {
   outline: none;
   border: 1px solid #000;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 600px) {
@@ -2251,8 +2273,8 @@
   background: #EC7979;
   -webkit-box-shadow: inset 0px 0px 10px #AB4949;
           box-shadow: inset 0px 0px 10px #AB4949;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 600px) {
@@ -2319,8 +2341,8 @@
 .footer__link:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 1024px) {

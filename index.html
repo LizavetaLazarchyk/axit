@@ -25,7 +25,7 @@
         <object data="img/logo.svg" class="header__logo__axit" type="image/svg+xml"></object>
         </a>
         <object data="img/menu.svg" class="header__menu_open" type=""></object>
-        <object data="img/menu.svg" class="header__menu_close" type=""></object>
+        <object data="img/menuclose.svg" class="header__menu_close" type=""></object>
         </div>
         <nav class="navigation">
           <ul class="navigation__list">
@@ -165,11 +165,13 @@
         <div class="slider">
           <h2 class="slider__title">our projects</h2>
           <div class="slider__content">
-            <object class="slider__arrow" data="img/arrow.svg" type=""></object>
+            <img class="slider__arrow slider__arrow-prev" src="img/arrow.svg" type="">
+            <div class="slider__inner__wrap">
+            <div class="slider__inner">
             <div class="slider__img__wrap">
               <img src="img/slider_img1.jpg" alt="project 1" class="slider__img">
             </div>
-            <!-- <div class="slider__img__wrap">
+            <div class="slider__img__wrap">  
               <img src="img/slider_img2.jpg" alt="project 2" class="slider__img">
             </div>
             <div class="slider__img__wrap">
@@ -177,8 +179,10 @@
             </div>
             <div class="slider__img__wrap">
               <img src="img/slider_img4.jpg" alt="project 4" class="slider__img">
-            </div> -->
-            <object class="slider__arrow" data="img/arrowR.svg" type=""></object>
+            </div>
+            </div>
+            </div>
+            <img class="slider__arrow slider__arrow-next" src="img/arrowR.svg" type="">
           </div>
         </div>
       </div>
@@ -252,45 +256,6 @@
             </div>
             <button class="prices__option__btn">Choose</button>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="calc">
-      <div class="container">
-        <h1 class="calc__title">Calculate your rate</h1>
-        <div class="calculator">
-          <h2 class="calculator__value">Amount</h2>
-          <div class="calculator__runner">
-            <div class="calculator__runner__line"></div>
-            <div class="calculator__runner__numbers">
-            <p class="calculator__runner__item">1</p>
-            <p class="calculator__runner__item">2</p>
-            <p class="calculator__runner__item">3</p>
-            <p class="calculator__runner__item">4</p>
-            <p class="calculator__runner__item">5</p>
-            <p class="calculator__runner__item">6</p>
-          </div>
-          </div>
-          <h2 class="calculator__value">Period</h2>
-          <div class="calculator__radio__list">
-            <p class="calculator__radio__item"><input type="radio" name="repiod" class="calculator__radio__input" value="rad1">1 mounth </p>
-            <p class="calculator__radio__item"><input type="radio" name="repiod" class="calculator__radio__input" value="rad2">1 Year </p>
-            <p class="calculator__radio__item"><input type="radio" name="repiod" class="calculator__radio__input" value="rad3">All time </p>
-          </div>
-          <h2 class="calculator__value">Kinds</h2>
-          <div class="calculator__checkbox__list">
-            <p class="calculator__checkbox__item"><input type="checkbox" name="kinds" class="calculator__checkbox__check" value="check1">1 mounth </p>
-            <p class="calculator__checkbox__item"><input type="checkbox" name="kinds" class="calculator__checkbox__check" value="check2">1 Year </p>
-            <p class="calculator__checkbox__item"><input type="checkbox" name="kinds" class="calculator__checkbox__check" value="check3">All time </p>
-          </div>
-        </div>
-        <div class="calc__bottom">
-          <div class="calc__price">
-          <p class="calc__price__text">Price:</p>
-          <p class="calc__price__value">50$</p>
-          </div>
-          <button class="calc__bottom__btn">Choose</button>
         </div>
       </div>
     </section>
@@ -401,5 +366,6 @@
         <p class="footer__text">© 2015 Axure Themes</p>
       </div>
     </footer>
+    <script src="./scrpt2.js"> </script>
   </body>
 </html>
